@@ -39,7 +39,9 @@ MEDIA_URL = '/media/'
 
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
-SECRET_KEY = 'as%n_m#)^vee2pe91^^@c))sl7^c6t-9r8n)_69%)2yt+(la2&'
+SECRET_KEY = ''
+with open(os.path.join(BASEDIR, 'secret_salt'), 'r') as f:
+    SECRET_KEY = f.read()
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
