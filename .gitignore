@@ -1,0 +1,4 @@
+*.pyc
+data.db
+repos
+secret_salt

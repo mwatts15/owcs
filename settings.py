@@ -104,3 +104,6 @@ STATICFILES_DIRS = (
 
 # Codespeed settings that can be overwritten here.
 from codespeed.settings import *
+DEF_BRANCH = 'dev'
+WEBSITE_NAME = 'OpenwormCodespeed'
+REQUIRE_SECURE_AUTH = False
